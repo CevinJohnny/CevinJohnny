@@ -4,119 +4,141 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="./Style.css" type="text/css"/>
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
     <script src="./js/tests/vendor/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
     <script src="./js/carousel.js" type="javascript"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
+<!--头部标签-->
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="http://cevinjohnny.github.io/" target="_blank">CevinJohnny</a>
-                <a class="navbar-brand" target="_blank"
-                   href="http://www.weibo.com/zhuoyiboke/profile?rightmod=1&wvr=6&mod=personinfo">WeiBO</a>
-                <a class="navbar-brand" href="http://pai.weico.com/2909252688122505150" target="_blank">WeiCo</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
-                </form>
-
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Cevin Johnny</a>
     </div>
-
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="http://www.weibo.com/zhuoyiboke/profile?rightmod=1&wvr=6&mod=personinfo">WeiBo</a></li>
+        <li><a href="http://pai.weico.com/2909252688122505150" target="_blank">WeiCo</a></li>
+      </ul>
+    </div><!-- /.nav-collapse -->
+  </div><!-- /.container -->
 </nav>
 
 <div class="container">
+  <!--LOGO-->
     <div id="logo">
         <h1>CevinJohnny's Blog</h1>
     </div>
+  <!--滚动宣传-->
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
+  <div class="carousel_container01">
+    <div class="carousel_container02">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="img/01.png" alt="...">
-            </div>
-            <div class="item">
-                <img src="img/02.jpg" alt="...">
-            </div>
-            <div class="item">
-                <img src="img/03.jpg" alt="...">
-            </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <img src="img/01.png" alt="...">
+              </div>
+              <div class="item">
+                  <img src="img/02.jpg" alt="...">
+              </div>
+              <div class="item">
+                  <img src="img/03.jpg" alt="...">
+              </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+          </a>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
+      </div>
     </div>
 
-
+<!--左侧概览-->
+  <div class="left">
     <div class="jumbotron">
-        <div class="container">
-            <h1>Hello, world!</h1>
-            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        </div>
+        <h1>Hello, world!</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a></p>
+    </div>
+    <div class="jumbotron">
+      <h1>Hello, world!</h1>
+      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a></p>
+    </div>
+    <div class="jumbotron">
+      <h1>Hello, world!</h1>
+      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a></p>
+    </div>
+    <div class="jumbotron">
+      <h1>Hello, world!</h1>
+      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a></p>
+    </div>
+  </div>
+<!--右侧概览-->
+  <div class="right">
+    <div class="Weico">
+      <a href="http://pai.weico.com/2909252688122505150" target="_blank"><img src="img/Weico.png" alt="Weico" ></a>
+    </div>
+    <div  class= "col-md-4" >
+      <h2>Heading</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
+        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+        malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <p><a class="btn btn-default btn-lg" href="#">View Details</a></p>
+    </div>
+  </div>
+
+
+
+    <div  class= "col-md-4" >
+      <h2>Heading</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
+        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+        malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <p><a class="btn btn-default btn-lg" href="#">View Details</a></p>
+    </div>
+    <div  class= "col-md-4" >
+      <h2>Heading</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
+        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+        malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <p><a class="btn btn-default btn-lg" href="#">View Details</a></p>
     </div>
 
-    <div  class= "row" >
-        <div class="container">
-        <div  class= "col-md-4" >
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.</p>
-            <p><a class="btn btn-default btn-lg" href="#">View Details</a></p>
-        </div>
-        <div  class= "col-md-4" >
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.</p>
-            <p><a class="btn btn-default btn-lg" href="#">View Details</a></p>
-        </div>
-        <div  class= "col-md-4" >
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.</p>
-            <p><a class="btn btn-default btn-lg" href="#">View Details</a></p></div>
-        </div>
-    </div>
-    <hr/>
+
+
+
+
+  <!--页尾-->
     <footer>
-        <p>&copy;Company 2014</p>
+        <hr/>
+        <p>&copy;CevinJohnny 2014  &square; <a href="jaysukh@163.com" target="_blank">email:jaysukh@163.com</a> </p>
     </footer>
 </div>
 </body>
