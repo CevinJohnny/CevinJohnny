@@ -1,5 +1,5 @@
 body{
-    background: url("img/bgd.JPG");
+    background: url("http://blog-pic.qiniudn.com/bgd.JPG");
 }
 #logo{
     position: relative;
@@ -62,7 +62,9 @@ body{
   padding: 30px 0px 10px 25px;
   margin: 10px 0px 30px 0px;
 }
-
+.btn-group{
+  width: 90%;
+}
 .nav_pagination{
   width: 300px;
   height: auto;
